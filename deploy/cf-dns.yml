@@ -6,7 +6,8 @@ spec:
         acme:
                 email: contact@noc.matthew-cloud.com
                 server: https://acme-v02.api.letsencrypt.org/directory
-                privateKeySecretRef: is-a-k
+                privateKeySecretRef: 
+                        name: is-a-k
                 solvers:
                         - dns01:
                                 cloudflare:
